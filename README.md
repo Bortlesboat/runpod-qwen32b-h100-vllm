@@ -1,6 +1,21 @@
 # Qwen 2.5 32B H100 Worker For RunPod Hub
 
+[![RunPod](https://api.runpod.io/badge/Bortlesboat/runpod-qwen32b-h100-vllm)](https://console.runpod.io/hub/Bortlesboat/runpod-qwen32b-h100-vllm)
+
 This repo packages an OpenAI-compatible `vLLM` worker around `Qwen/Qwen2.5-32B-Instruct` for H100-class RunPod Serverless deployments.
+
+Deploy on RunPod Hub:
+
+- https://console.runpod.io/hub/Bortlesboat/runpod-qwen32b-h100-vllm
+
+Good search terms for this listing:
+
+- `qwen 32b`
+- `qwen2.5-32b-instruct`
+- `vllm`
+- `openai-compatible`
+- `h100`
+- `serverless`
 
 It is meant for teams that want a sharper default than a generic `vLLM` starter:
 
