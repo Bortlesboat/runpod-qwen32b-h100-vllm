@@ -1,0 +1,58 @@
+{
+  "tests": [
+    {
+      "name": "openai_completions_smoke",
+      "input": {
+        "prompt": "Reply with exactly four words.",
+        "temperature": 0,
+        "top_p": 1,
+        "max_tokens": 12
+      },
+      "timeout": 360000
+    }
+  ],
+  "config": {
+    "gpuTypeId": "NVIDIA H100 PCIe",
+    "gpuCount": 1,
+    "env": [
+      {
+        "key": "MODEL_NAME",
+        "value": "Qwen/Qwen2.5-1.5B-Instruct"
+      },
+      {
+        "key": "DTYPE",
+        "value": "bfloat16"
+      },
+      {
+        "key": "MAX_MODEL_LEN",
+        "value": "4096"
+      },
+      {
+        "key": "GPU_MEMORY_UTILIZATION",
+        "value": "0.85"
+      },
+      {
+        "key": "MAX_NUM_SEQS",
+        "value": "32"
+      },
+      {
+        "key": "DEFAULT_MAX_TOKENS",
+        "value": "128"
+      },
+      {
+        "key": "MAX_CONCURRENCY",
+        "value": "8"
+      }
+    ],
+    "allowedCudaVersions": [
+      "12.8",
+      "12.7",
+      "12.6",
+      "12.5",
+      "12.4",
+      "12.3",
+      "12.2",
+      "12.1"
+    ]
+  }
+}
